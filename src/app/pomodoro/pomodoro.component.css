@@ -1,0 +1,15 @@
+.timer-text {
+  min-height: 300px;
+  font-size: 250px;
+  text-align: center;
+}
+
+.overtime {
+  background: red;
+  color: white;
+}
+
+.tick {
+  background: black;
+  color: white;
+}

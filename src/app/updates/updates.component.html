@@ -1,0 +1,15 @@
+<h1>Release Notes</h1>
+
+<div *ngFor="let update of updates">
+  <div *ngIf="update.title.trim().length > 0">
+    <h2>{{ update.date }} - {{ update.title }}</h2>
+    <p>{{ update.lead }}</p>
+    <div *ngIf="update.bullets.length > 0">
+      <ul>
+        <li *ngFor="let bullet of update.bullets">
+          {{ bullet }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

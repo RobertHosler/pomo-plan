@@ -1,0 +1,14 @@
+<h1>Pomodoro</h1>
+
+<div
+  class="timer-text"
+  [ngClass]="{
+    overtime: pSecCountdown < 0 && pSecCountdown % 2,
+    tick: pSecCountdown % 60 === 0
+  }"
+>
+  {{ time }}
+</div>
+
+<button type="button" class="btn btn-success mr-3" (click)="onGo()">GO</button>
+<button type="button" class="btn btn-danger" (click)="onStop()">STOP</button>
